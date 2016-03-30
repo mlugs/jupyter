@@ -1,0 +1,8 @@
+main:
+  build: .
+  environment:
+      PYTHONUNBUFFERED: 0
+  volumes:
+   - ./notebook:/data
+  ports:
+   - "8888:8888"
